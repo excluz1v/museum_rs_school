@@ -1,0 +1,11 @@
+.error input {
+  border-color: red;
+}
+
+.success input {
+  border-color: green;
+}
+
+small {
+  color: red;
+}

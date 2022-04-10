@@ -1,0 +1,272 @@
+@import "variables";
+@import "fonts";
+
+/* welcome slider styles */
+.welcome__slider-item {
+  position: relative;
+  height: 810px;
+}
+
+.welcome__slider-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.welcome__slider-image img {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.welcome__slider-tracker {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  width: 525px;
+  height: 120px;
+  padding-left: 75px;
+  font-size: var(--font-size-sm);
+  background-color: #000;
+}
+
+.welcome__slider .slick-arrow {
+  position: absolute;
+  bottom: 48px;
+  z-index: 3;
+  width: 30px;
+  height: 8px;
+  padding: 15px 5px;
+  font-size: 0;
+  border: none;
+}
+
+/* Стрелка влево */
+.welcome__slider .slick-arrow.slick-prev {
+  right: 126px;
+  background: url("../assets/svg/arrow_left.svg") center center / 100% no-repeat;
+}
+
+/* Стрелка вправо */
+.welcome__slider .slick-arrow.slick-next {
+  right: 75px;
+  background: url("../assets/svg/arrow_right.svg") center center / 100%
+    no-repeat;
+}
+
+/* Точки (булиты) */
+.welcome__slider .slick-dots {
+  position: absolute;
+  right: 214px;
+  bottom: 58px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 180px;
+  margin: 0;
+}
+
+.welcome__slider .slick-dots li {
+  font-size: 0;
+  list-style: none;
+}
+
+/* Элемент точки */
+.welcome__slider .slick-dots li button {
+  width: 16px;
+  height: 16px;
+  border: none;
+}
+
+/* Активная точка */
+.welcome__slider .slick-dots li.slick-active {
+  background-color: $font-gold;
+}
+
+.welcome__slider .slick-dots li.slick-active button {
+  background-color: $font-gold;
+}
+
+@media (max-width: 1900px) {
+  .welcome__slider-image {
+    max-width: 80vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .welcome__slider {
+    &-image img {
+      max-width: 700px;
+    }
+
+    &-item {
+      position: relative;
+      height: 585px;
+    }
+
+    &-tracker {
+      width: 475px;
+      padding-left: 50%;
+    }
+
+    & .slick-dots {
+      right: 200px;
+      bottom: 57px;
+      max-width: 160px;
+    }
+
+    & .slick-dots li button {
+      width: 12px;
+      height: 12px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome__slider {
+    &-image {
+      max-width: 100%;
+    }
+
+    &-image img {
+      max-width: 100%;
+    }
+
+    &-item {
+      height: 610px;
+    }
+
+    &-tracker {
+      width: 564px;
+      height: 29px;
+      padding-left: 0;
+      font-size: var(--font-size-md);
+    }
+
+    & .slick-dots {
+      right: 288px;
+      bottom: 15px;
+    }
+
+    & .slick-arrow {
+      bottom: 8px;
+    }
+
+    & .slick-arrow.slick-prev {
+      right: 212px;
+    }
+
+    & .slick-arrow.slick-next {
+      right: 165px;
+    }
+  }
+
+  #MonaLisa {
+    content: url("../assets/img/welcome_slider/1.webp");
+  }
+}
+
+@media (max-width: 700px) {
+  .welcome__slider {
+    &-tracker {
+      position: relative;
+      width: auto;
+      padding-left: 10vw;
+      font-size: 16px;
+    }
+
+    &-item {
+      position: static;
+      display: flex !important;
+      flex-wrap: wrap;
+      height: auto;
+    }
+
+    &-image {
+      position: static;
+      width: 100%;
+      max-width: none;
+      margin-bottom: 30px;
+    }
+
+    & .slick-dots {
+      right: calc(30vw + 30px);
+      bottom: 10px;
+      max-width: calc(20vw + 20px);
+    }
+
+    & .slick-prev.slick-arrow {
+      right: calc(15vw + 45px);
+      bottom: 0;
+    }
+
+    & .slick-next.slick-arrow {
+      right: 15vw;
+      bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .welcome__slider {
+    height: auto;
+
+    &-tracker {
+      height: auto;
+      padding-left: 75px;
+      font-weight: 400;
+    }
+
+    &-image {
+      margin-bottom: 30px;
+    }
+
+    & .slick-dots {
+      right: 0;
+      bottom: 5px;
+      left: 150px;
+      max-width: 75px;
+    }
+
+    & .slick-dots li {
+      width: 7px;
+      height: 7px;
+      overflow: hidden;
+    }
+
+    & .slick-arrow {
+      width: 20px;
+      padding: 10px 5px;
+    }
+
+    & .slick-arrow.slick-prev {
+      right: 110px;
+    }
+
+    & .slick-next.slick-arrow {
+      right: 75px;
+    }
+  }
+}
+
+@media (max-width: 410px) {
+  .welcome__slider {
+    & .slick-arrow.slick-prev {
+      right: 15vw;
+    }
+
+    & .slick-next.slick-arrow {
+      right: 5vw;
+    }
+
+    &-tracker {
+      padding-left: 10vw;
+    }
+
+    & .slick-dots {
+      left: 35vw;
+    }
+  }
+}

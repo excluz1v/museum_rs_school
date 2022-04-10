@@ -1,0 +1,1305 @@
+@media (max-width: 1700px) {
+  :root {
+    --font-size-xl: 28px;
+    --font-size-md: 24px;
+    --font-size-sm: 20px;
+    --font-size-xs: 16px;
+  }
+
+  .header,
+  section,
+  .footer__wrapper {
+    padding: 0 30px;
+  }
+
+  .copyright {
+    padding: 50px 25px;
+  }
+
+  .main-title {
+    font-size: var(--font-size-xl);
+  }
+
+  .text-title {
+    font-size: 65px;
+  }
+
+  .explore__img img {
+    max-width: 50vw;
+  }
+
+  .picture {
+    &__container {
+      max-height: 1600px;
+    }
+
+    &__container-inner {
+      row-gap: 1vw;
+      max-height: 185vw;
+    }
+  }
+
+  .gallery__img-wrapper {
+    max-width: 30vw;
+  }
+
+  .tickets {
+    &__image {
+      max-width: 700px;
+    }
+
+    &__form {
+      flex-grow: 1;
+      width: auto;
+    }
+  }
+
+  .booking__form-wrapper {
+    padding: 90px;
+  }
+
+  .contacts {
+    &__map {
+      max-width: 70vw;
+    }
+
+    &__map img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .hide {
+    display: none;
+  }
+
+  .text-title {
+    font-size: 50px;
+    line-height: 70px;
+  }
+
+  .welcome .text-title {
+    line-height: 90px;
+  }
+
+  .header {
+    &__nav {
+      max-width: 700px;
+    }
+  }
+
+  .picture__container {
+    max-height: 1195px;
+  }
+
+  .tickets {
+    &__form-wrapper-close {
+      right: 5px;
+    }
+
+    &__amount-container {
+      max-width: 175px;
+    }
+  }
+
+  .booking__form {
+    &-wrapper {
+      padding: 70px 10px 10px;
+    }
+
+    &__count-wrapper {
+      padding-top: 10px;
+      font-size: 18px;
+    }
+  }
+
+  .booking {
+    &__header {
+      margin-bottom: 15px;
+      line-height: 55px;
+    }
+  }
+
+  .booking__title,
+  .count__title {
+    font-size: 18px;
+  }
+
+  .overview {
+    &__title {
+      font-size: 32px;
+    }
+
+    &__img {
+      margin-bottom: 30px;
+    }
+
+    &__date,
+    &__time,
+    &__type {
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+    &__detalization__item {
+      margin-bottom: 5px;
+    }
+
+    &__total-wrapper {
+      font-size: 32px;
+      line-height: 37.5px;
+    }
+  }
+
+  .book__button {
+    max-width: 220px;
+  }
+
+  .overview__subtitle,
+  .detalization__type {
+    font-size: 22px;
+  }
+
+  .detalization__type {
+    line-height: 26px;
+  }
+
+  .contacts__map {
+    max-width: 60vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header,
+  section {
+    padding: 0 20px;
+  }
+
+  .visiting,
+  .explore,
+  .video,
+  .gallery,
+  .tickets,
+  .contacts {
+    padding: 60px 20px;
+  }
+
+  .header {
+    height: 130px;
+    font-size: var(--font-size-xl);
+
+    &__nav {
+      display: none;
+    }
+
+    &__logo {
+      font-family: "Forum", sans-serif;
+    }
+  }
+
+  .burger__button {
+    display: block;
+  }
+
+  .burger__button.active::after {
+    top: 9px;
+    transform: rotate(-45deg);
+  }
+
+  .burger__button.active::before {
+    top: 9px;
+    transform: rotate(45deg);
+  }
+
+  .burger__button.active span {
+    display: none;
+  }
+
+  .burger__menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    box-sizing: border-box;
+    width: 300px;
+    height: 100%;
+    padding-top: 35px;
+    padding-left: 35px;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 2px;
+    content: "";
+    background-color: #000;
+  }
+
+  .burger__menu__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+  }
+
+  .burger__menu__list li {
+    position: relative;
+    width: 85px;
+    padding-right: 35px;
+  }
+
+  .burger__menu__list li::after {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 7px;
+    height: 12px;
+    content: "";
+    background-image: url("../assets/img/arrow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: translateY(-50%);
+  }
+
+  .welcome {
+    &__text {
+      top: 50px;
+    }
+
+    &__link {
+      max-width: 300px;
+      height: 60px;
+      border-radius: 10px;
+    }
+  }
+
+  .text-subtitle {
+    margin-bottom: 50px;
+  }
+
+  .underline.text-title {
+    margin-bottom: 60px;
+  }
+
+  .visiting {
+    &__wrapper {
+      grid-template-rows: auto;
+      grid-template-columns: repeat(2, 330px);
+      grid-gap: 62px 0;
+    }
+
+    &__item__img {
+      margin-bottom: 23px;
+    }
+
+    &__item__title {
+      padding-bottom: 8px;
+      letter-spacing: 3px;
+    }
+
+    &__item__title::before {
+      width: 150px;
+    }
+  }
+
+  .explore {
+    &__wrapper {
+      flex-wrap: wrap;
+      gap: 40px 0;
+      justify-content: center;
+    }
+
+    &__about {
+      gap: 0;
+    }
+
+    &__img img {
+      width: 100%;
+      max-width: 720px;
+    }
+  }
+
+  .video {
+    &__header {
+      margin-bottom: 20px;
+    }
+  }
+
+  .tickets {
+    &__form {
+      padding-left: 80px;
+    }
+
+    &__form__title {
+      margin-bottom: 30px;
+      font-size: var(--font-size-xl);
+      line-height: 33px;
+      text-align: left;
+    }
+
+    &__image {
+      max-width: 700px;
+    }
+
+    &__amount {
+      justify-content: space-between;
+    }
+  }
+
+  .detalization__result,
+  .detalization__type {
+    font-size: 22px;
+  }
+
+  .amount {
+    &__wrapper {
+      margin-bottom: 25px;
+    }
+
+    &__wrapper p {
+      margin-bottom: 12px;
+      font-size: 22px;
+      line-height: 26px;
+    }
+  }
+
+  .total__price {
+    margin-top: 0;
+    font-size: var(--font-size-xl);
+    line-height: 33px;
+    text-align: justify;
+    letter-spacing: 1.65px;
+  }
+
+  .contacts {
+    &__map {
+      max-width: 694px;
+    }
+
+    &__info-wrapper {
+      max-width: 274px;
+    }
+
+    & .contacts-title {
+      margin-bottom: 65px;
+    }
+  }
+
+  .info-title {
+    max-width: 185px;
+    margin-bottom: 35px;
+    line-height: 28px;
+  }
+
+  .info-address,
+  .info-phone {
+    margin-bottom: 15px;
+  }
+
+  .footer {
+    padding-top: 65px;
+
+    &__wrapper {
+      padding: 0 20px;
+      padding-bottom: 25px;
+    }
+
+    &__nav {
+      padding-left: 45px;
+    }
+
+    &__nav-list {
+      justify-content: space-between;
+      width: 100%;
+      max-width: 320px;
+    }
+  }
+
+  .social {
+    align-self: flex-end;
+    height: 48px;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .tickets__image {
+    max-width: 60vw;
+  }
+
+  .contacts__container {
+    gap: 0 35px;
+  }
+
+  .contacts__map {
+    max-width: 60vw;
+  }
+
+  .footer {
+    padding-top: 40px;
+
+    &__wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-bottom: 16px;
+    }
+
+    &__nav {
+      max-width: 393px;
+      padding-left: 105px;
+      font-size: 18px;
+    }
+
+    &__nav-list {
+      max-width: 393px;
+    }
+
+    &__nav-list li {
+      padding-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .booking__form-wrapper {
+    flex-wrap: wrap;
+    padding: 30px 5% 10px;
+  }
+
+  .booking__form {
+    max-width: none;
+    margin-bottom: 50px;
+  }
+
+  .booking__form__date-wrapper {
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --font-size-xl: 22px;
+    --font-size-md: 20px;
+    --font-size-sm: 18px;
+    --font-size-xs: 16px;
+  }
+
+  .visiting,
+  .explore,
+  .video,
+  .gallery,
+  .tickets,
+  .contacts {
+    padding: 40px 20px;
+  }
+
+  .underline {
+    padding-bottom: 23px;
+  }
+
+  .underline.text-title {
+    margin-bottom: 36px;
+  }
+
+  .header {
+    height: 110px;
+  }
+
+  .main-title {
+    padding-top: 12px;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 50px;
+  }
+
+  .text-title {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .welcome {
+    padding-bottom: 30px;
+
+    &__text {
+      position: static;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+    }
+
+    & .text-title {
+      line-height: 60px;
+      text-align: center;
+    }
+
+    &__link {
+      display: none;
+    }
+  }
+
+  .burger {
+    &__menu {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 861px;
+      padding: 35px;
+      overflow: hidden;
+    }
+
+    &__gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 20px;
+      padding-bottom: 35px;
+      border-bottom: 1px solid #fff;
+    }
+
+    &__menu__list {
+      margin-bottom: 35px;
+    }
+
+    &__menu .social {
+      display: flex;
+      padding: 0;
+      padding-top: 35px;
+      margin: 0 auto;
+    }
+
+    &__gallery-item {
+      width: calc(50% - 10px);
+    }
+
+    &__gallery-item img {
+      width: 100%;
+    }
+  }
+
+  .w_100 {
+    width: 100%;
+    max-width: none;
+  }
+
+  .visiting {
+    padding-bottom: 80px;
+
+    &__wrapper {
+      grid-template-columns: repeat(2, 280px);
+      grid-gap: 40px 0;
+    }
+
+    &__item__title {
+      padding-bottom: 12px;
+      line-height: 24px;
+      letter-spacing: 3px;
+    }
+
+    &__item__subtitle {
+      line-height: 18px;
+    }
+
+    &__item__footer {
+      line-height: 19px;
+    }
+  }
+
+  .explore {
+    &__wrapper {
+      gap: 0;
+    }
+
+    &__about {
+      display: none;
+    }
+
+    &__text {
+      width: 100%;
+      margin-bottom: 2px;
+    }
+
+    &__img {
+      padding-top: 0;
+    }
+  }
+
+  .video {
+    padding-bottom: 80px;
+
+    &__header {
+      margin-bottom: 0;
+    }
+  }
+
+  .gallery {
+    .text-title {
+      margin-bottom: 45px;
+    }
+
+    &__img-wrapper {
+      max-width: 352px;
+    }
+  }
+
+  .picture__container {
+    max-height: 1035px;
+  }
+
+  .picture__container-inner {
+    gap: 12.5px 25px;
+  }
+
+  .tickets {
+    &__image {
+      max-width: 444px;
+      max-height: 340px;
+      background-size: contain;
+    }
+
+    &__form {
+      padding-left: 60px;
+    }
+
+    &__form__title {
+      margin-bottom: 40px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    &__amount-container {
+      margin-bottom: 40px;
+    }
+
+    &__submit {
+      font-size: 22px;
+    }
+  }
+
+  .booking {
+    padding-right: 40px;
+
+    &__header {
+      padding-top: 40px;
+      font-size: 50px;
+      line-height: 55px;
+    }
+
+    &__form {
+      padding-right: 0;
+    }
+
+    &__form-wrapper {
+      box-sizing: border-box;
+      max-width: 590px;
+      padding: 50px 30px;
+      margin: 0 auto;
+      font-size: 18px;
+    }
+
+    &__title {
+      margin-bottom: 43px;
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+    &__overview {
+      box-sizing: border-box;
+      max-height: 665px;
+      padding: 25px 15px;
+    }
+
+    &__title.underline {
+      padding-bottom: 10px;
+    }
+
+    &__form__count-wrapper {
+      max-height: 135px;
+    }
+
+    &__form__date,
+    &__form__time {
+      max-width: 251px;
+    }
+
+    &__form__date-wrapper,
+    &__form__time-wrapper {
+      max-width: none;
+    }
+  }
+
+  .overview {
+    &__title {
+      margin-bottom: 5px;
+    }
+
+    &__detalization {
+      padding-bottom: 5px;
+    }
+
+    &__total-wrapper {
+      margin-bottom: 15px;
+    }
+
+    &__img {
+      margin-bottom: 25px;
+    }
+  }
+
+  .tickets__form-wrapper-close {
+    top: 0;
+    right: 30px;
+  }
+
+  .count__title {
+    margin-bottom: 15px;
+  }
+
+  .count__title.underline {
+    padding-bottom: 5px;
+  }
+
+  .form__count__item {
+    margin-bottom: 15px;
+  }
+
+  .total__price {
+    padding-top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: normal;
+  }
+
+  .parallax {
+    height: 300px;
+  }
+
+  .contacts {
+    padding-bottom: 68px;
+
+    &__container {
+      flex-wrap: wrap;
+    }
+
+    &__info-wrapper {
+      max-width: none;
+      margin-bottom: 40px;
+    }
+
+    &__map {
+      max-width: none;
+      height: 476px;
+    }
+  }
+
+  .info-title {
+    max-width: 155px;
+  }
+
+  .social {
+    height: 48px;
+    padding-top: 30px;
+    padding-left: 300px;
+  }
+
+  .copyright {
+    padding: 40px 20px;
+  }
+
+  .copyright div {
+    width: auto;
+  }
+
+  .footer {
+    padding-top: 30px;
+
+    &__nav {
+      padding-top: 25px;
+    }
+
+    &__wrapper {
+      justify-content: start;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .burger__menu {
+    height: 100%;
+    overflow: visible;
+  }
+
+  .burger__menu__list {
+    row-gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .burger__gallery {
+    padding-bottom: 20px;
+  }
+
+  .burger__gallery-item img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .burger__gallery-item {
+    height: 125px;
+  }
+
+  .burger__menu .social {
+    padding-top: 20px;
+  }
+
+  .header__logo {
+    width: 100%;
+  }
+
+  .visiting {
+    padding-bottom: 40px;
+
+    &__wrapper {
+      grid-template-columns: repeat(2, 40vw);
+      grid-gap: 10vw;
+    }
+
+    &__item__title {
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    &__item__subtitle {
+      font-size: 16px;
+    }
+  }
+
+  .picture__container-inner {
+    gap: 2vh 3vw;
+  }
+
+  .gallery__img-wrapper {
+    max-width: 45vw;
+  }
+
+  .tickets {
+    &__image {
+      width: 100%;
+      max-width: none;
+      max-height: 300px;
+      margin-bottom: 20px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &__form {
+      padding-left: 0;
+    }
+
+    &__form-wrapper,
+    &__form {
+      justify-content: center;
+    }
+  }
+
+  .tickets__form__title,
+  .total__price {
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .tickets__amount-container {
+    margin-bottom: 10px;
+  }
+
+  .amount__wrapper p {
+    font-size: 18px;
+  }
+
+  .booking__form__date-wrapper {
+    margin-right: 0;
+  }
+
+  .booking__form__date-wrapper,
+  .booking__form__time-wrapper {
+    width: 45%;
+  }
+
+  .booking__form__date,
+  .booking__form__time {
+    max-width: none;
+  }
+
+  .overview__img::before,
+  .overview__img::after {
+    width: 50vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .contacts {
+    padding-bottom: 40px;
+  }
+
+  .contacts__map {
+    height: auto;
+  }
+
+  .social {
+    gap: 15px;
+    justify-content: center;
+    padding-left: 0;
+    margin: 0 auto;
+  }
+
+  .footer__nav {
+    padding-top: 40px;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  :root {
+    --font-size-md: 18px;
+    --font-size-sm: 16px;
+  }
+
+  .header {
+    height: 90px;
+  }
+
+  .main-title {
+    padding-top: 0;
+    padding-left: 25px;
+    font-size: var(--font-size-sm);
+    line-height: 18px;
+  }
+
+  .logo__img {
+    width: 29px;
+  }
+
+  .text-title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .welcome .text-title {
+    padding-top: 6px;
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .explore__text {
+    margin-bottom: 0;
+  }
+
+  .text-subtitle {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .burger {
+    &__menu {
+      padding-top: 35px;
+    }
+
+    &__gallery {
+      gap: 0 5%;
+    }
+
+    &__menu__list {
+      row-gap: 25px;
+      margin-bottom: 35px;
+    }
+
+    &__menu .social {
+      padding-top: 25px;
+    }
+
+    &__gallery-item {
+      width: 30%;
+      height: 91px;
+    }
+  }
+
+  .visiting {
+    &__wrapper {
+      grid-template-rows: 295px;
+      grid-template-columns: 280px;
+      grid-gap: 40px;
+    }
+
+    &__item__title {
+      letter-spacing: 5px;
+    }
+
+    &__item__img {
+      margin-bottom: 20px;
+    }
+  }
+
+  .underline.text-title {
+    margin-bottom: 40px;
+  }
+
+  .video {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  .video__header__title {
+    margin-bottom: 20px;
+  }
+
+  .picture__container {
+    max-height: 590px;
+  }
+
+  .picture__container-inner {
+    gap: 2vh 5vw;
+    max-height: 1000px;
+  }
+
+  .gallery__img-wrapper {
+    max-width: 42vw;
+  }
+
+  .gallery__img-wrapper:nth-child(11) {
+    padding-top: 0;
+  }
+
+  .tickets {
+    &__image {
+      max-height: 160px;
+      margin-bottom: 40px;
+    }
+
+    &__amount-container {
+      margin-bottom: 20px;
+    }
+
+    &__submit {
+      font-size: 16px;
+    }
+
+    &__form-wrapper-close {
+      right: 10px;
+    }
+  }
+
+  .tickets__form__title,
+  .total__price,
+  .amount__wrapper p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .amount__wrapper {
+    margin-bottom: 20px;
+  }
+
+  .amount__wrapper p {
+    margin-bottom: 15px;
+  }
+
+  .total__price {
+    padding-top: 20px;
+  }
+
+  .booking {
+    &__form-wrapper {
+      padding: 55px 10px 10px;
+    }
+
+    &__header {
+      font-size: 32px;
+      line-height: 35px;
+    }
+
+    &__overview {
+      max-height: none;
+    }
+
+    &__form__moment {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    &__form__date-wrapper,
+    &__form__time-wrapper {
+      width: 100%;
+    }
+  }
+
+  .form__count__item {
+    margin-bottom: 18px;
+  }
+
+  .overview {
+    &__info__img {
+      max-width: 120px;
+      height: 96px;
+      background-size: cover;
+    }
+
+    &__img {
+      height: 442px;
+      margin-bottom: 40px;
+    }
+
+    &__img::before {
+      max-height: none;
+      background-image: url("../assets/img/visa_back_small.webp");
+      background-size: contain;
+    }
+
+    &__img::after {
+      background-image: none;
+    }
+
+    &__img::before,
+    &__img::after {
+      width: 100%;
+    }
+  }
+
+  button {
+    &__minus,
+    &__plus {
+      width: 28%;
+    }
+
+    &__button {
+      font-size: 20px;
+      line-height: 23px;
+    }
+
+    &__minus::before,
+    &__plus::before {
+      width: 18px;
+    }
+
+    &__plus::after {
+      height: 18px;
+    }
+  }
+
+  .info-title {
+    max-width: 125px;
+    margin-bottom: 45px;
+    font-size: var(--font-size-sm);
+    line-height: 17px;
+  }
+
+  .footer {
+    padding-top: 37px;
+    padding-bottom: 40px;
+    font-size: 16px;
+
+    & .main-title {
+      padding-left: 20px;
+    }
+
+    &__nav {
+      margin-bottom: 5px;
+      font-size: 16px;
+    }
+
+    &__nav-list {
+      flex-direction: column;
+      align-content: space-between;
+      height: 75px;
+    }
+
+    &__nav-list li {
+      width: 20%;
+      padding: 0;
+    }
+
+    &__wrapper {
+      padding-bottom: 20px;
+    }
+  }
+
+  .social {
+    gap: 5px;
+
+    & li {
+      box-sizing: border-box;
+    }
+
+    & li a {
+      padding-top: 5px;
+    }
+  }
+
+  .copyright {
+    padding-bottom: 0;
+  }
+
+  .copyright__school {
+    display: none;
+  }
+
+  .box {
+    &1 {
+      order: 1;
+    }
+
+    &3 {
+      order: 2;
+    }
+
+    &5 {
+      order: 2;
+    }
+
+    &2,
+    &4,
+    &6 {
+      order: 3;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .welcome {
+  }
+
+  .burger {
+    &__menu__list {
+      row-gap: 20px;
+    }
+
+    &__menu {
+      padding: 0;
+      padding-top: 15px;
+    }
+
+    &__menu .social {
+      padding-top: 10px;
+    }
+  }
+
+  .overview__info__img {
+    display: none;
+  }
+
+  .overview__img {
+    height: 241px;
+  }
+
+  .form__count__item {
+    flex-wrap: wrap;
+    row-gap: 10px;
+    justify-content: center;
+  }
+
+  .booking__form__count-wrapper {
+    max-height: none;
+  }
+
+  .footer__nav-list li {
+    width: 30%;
+  }
+}
